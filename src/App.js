@@ -23,11 +23,9 @@ const App = () => {
                 setIsShowingForm(false);
                 event.preventDefault();
             }}>
-                <label>recipe-name</label>
-                <input type="text" name="recipe-name" />
+                <input type="text" name="recipe-name" placeholder="Recipe Name"/>
                 <br/><br/>
-                <label>recipe-instructions</label>
-                <input type="text" name="recipe-instructions" />
+                <input type="text" name="recipe-instructions" placeholder="Recipe Instructions"/>
                 <br/><br/>
                 <input type="submit" value="Submit" />
             </form>
@@ -39,7 +37,7 @@ const App = () => {
         <h1 className="heading"> My Recipes </h1>
         <div>
             {
-                recipes.length === 0  ?  <div>There are no recipes to list</div> : <ul>{renderRecipes(recipes)}</ul> 
+                recipes.length === 0  ?  <div>There are no recipes to list</div> : <ol>{renderRecipes(recipes)}</ol> 
             }
         </div>
         
