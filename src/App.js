@@ -23,9 +23,11 @@ const App = () => {
                 setIsShowingForm(false);
                 event.preventDefault();
             }}>
-                <input className="textbox" name="recipe-name" placeholder="Recipe Name" type="textbox" />
+                <label htmlFor="recipe-name">Recipe Name</label>
+                <input className="textbox" name="recipe-name" placeholder="Recipe Name" type="text" id="recipe-name" aria-label="recipe-name" />
                 <br/><br/>
-                <input className="textbox" name="recipe-instructions" placeholder="Recipe Instructions" type="textbox" />
+                <label htmlFor="recipe-instruction">Recipe Instruction</label>
+                <input className="textbox" name="recipe-instructions" placeholder="Recipe Instructions" type="text" id="recipe-instruction" aria-label="recipe-instruction" />
                 <br/><br/>
                 <input type="submit" value="Submit" />
             </form>
