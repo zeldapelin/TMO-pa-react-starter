@@ -23,9 +23,9 @@ const App = () => {
                 setIsShowingForm(false);
                 event.preventDefault();
             }}>
-                <input name="recipe-name" placeholder="Recipe Name" role="textbox" />
+                <input name="recipe-name" placeholder="Recipe Name" type="text" />
                 <br/><br/>
-                <input name="recipe-instructions" placeholder="Recipe Instructions" role="textbox" />
+                <input name="recipe-instructions" placeholder="Recipe Instructions" type="text" />
                 <br/><br/>
                 <input type="submit" value="Submit" />
             </form>
