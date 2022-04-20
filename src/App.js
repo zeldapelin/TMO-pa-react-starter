@@ -23,15 +23,13 @@ const App = () => {
                 setIsShowingForm(false);
                 event.preventDefault();
             }}>
-                <label>
-                    Recipe Name:
-                    <input type="text" name="recipe-name"   />
-                    <br/><br/>
-                    Recipe Instruction:
-                    <input type="text" name="recipe-instructions" />
-                    <br/><br/>
-                    <input type="submit" value="Submit" />
-                </label>
+                <label>recipe-name</label>
+                <input type="text" name="recipe-name" />
+                <br/><br/>
+                <label>recipe-instructions</label>
+                <input type="text" name="recipe-instructions" />
+                <br/><br/>
+                <input type="submit" value="Submit" />
             </form>
         );
         
