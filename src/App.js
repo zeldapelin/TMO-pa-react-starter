@@ -38,10 +38,10 @@ const App = () => {
     }
   return (
     <div>
-        <h1 className="heading">My Recipes</h1>
+        <h1 className="heading"> My Recipes </h1>
         <div>
             {
-                recipes.length === 0  ?  <h3>There are no recipes to list</h3> : <ul>{renderRecipes(recipes)}</ul> 
+                recipes.length === 0  ?  <div>There are no recipes to list</div> : <ul>{renderRecipes(recipes)}</ul> 
             }
         </div>
         
@@ -50,7 +50,7 @@ const App = () => {
                 isShowingForm ? <div>{renderForm()}</div> : <button onClick={ () => setIsShowingForm(true)}>Add Recipe</button>
             }
         </div>
-      <h1 className="doNotRemoveMe">Hello world.</h1>
+      <div className="doNotRemoveMe">Hello world.</div>
         {/* ^ Do not remove this element ^ */}
     </div>
       
