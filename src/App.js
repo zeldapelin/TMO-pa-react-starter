@@ -26,8 +26,8 @@ const App = () => {
                 <label htmlFor="recipe-name">Recipe Name</label>
                 <input className="textbox" name="recipe-name" placeholder="Recipe Name" type="text" id="recipe-name" aria-label="recipe-name" />
                 <br/><br/>
-                <label htmlFor="recipe-instruction">Recipe Instruction</label>
-                <input className="textbox" name="recipe-instructions" placeholder="Recipe Instructions" type="text" id="recipe-instruction" aria-label="recipe-instruction" />
+                <label htmlFor="recipe-instructions">Recipe Instruction</label>
+                <input className="text" name="recipe-instructions" placeholder="Recipe Instructions" type="text" id="recipe-instructions" aria-label="recipe-instructions" />
                 <br/><br/>
                 <input type="submit" value="Submit" />
             </form>
